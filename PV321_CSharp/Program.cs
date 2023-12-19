@@ -10,6 +10,14 @@ Console.InputEncoding = Encoding.Unicode;
 Console.Clear();
 
 
+DateTime date = DateTime.Now;
+Console.WriteLine(date.ToLongDateString());
+Console.WriteLine(date.ToLongTimeString());
+Console.WriteLine(date.ToShortDateString());
+Console.WriteLine(date);
+DateTime dd = DateTime.Parse(Console.ReadLine());
+Console.WriteLine(dd.DayOfWeek);
+
 //string s = Console.ReadLine();  
 //Console.WriteLine(s);
 
