@@ -1,8 +1,14 @@
 ﻿
+
+
+
 using System.Net;
 using System.Text;
 using System.Threading.Channels;
 using PV321_CSharp;
+//using static System.Console;
+
+
 
 Console.BackgroundColor = ConsoleColor.Blue;
 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -11,29 +17,109 @@ Console.OutputEncoding = Encoding.Unicode;
 Console.InputEncoding = Encoding.Unicode;
 Console.Clear();
 
+///// 09.01.2024  ////////
+///
+
+//  |  &  ^  >> << 
+
+Point p = new Point(3, 2);
+Point p5 = new Point(3, 2);
+//p.Print();
+//p++;
+//++p;
+//p.Print();
+//Point p2 = -p;
+//p2.Print();
+//Point p3 = p * 5;
+//Point p4 = 5 * p;
+//p *= 5;
+//p3.Print();
+//p4.Print();
+
+Console.WriteLine(p == p5 ? "True" : "False");
+
+if(p || p5)
+{
+
+}
+
+//Point p2 = p;
+//Console.WriteLine(ReferenceEquals(p, p2));
+//p2.X = 100;
+//p.Print();
+
+//SPoint sp = new SPoint { X=3, Y=2 };
+//SPoint sp1 = sp;
+//sp1.X = 100;
+//Console.WriteLine(ReferenceEquals(sp, sp1));
+//Console.WriteLine(sp.X);
+
+//string st1 = "zzzz";
+//int key = 3;
+//StringBuilder sb = new();
+//foreach (char item in st1)
+//{
+//    int nc = (item - 97 + key)%26 + 97;
+//    sb.Append((char)nc);
+//}
+
+//Console.WriteLine(sb.ToString());
+
+//MyColor color = MyColor.Green;
+
+//Console.WriteLine((int)color);
+
+//var v = Enum.GetValues(typeof(MyColor));
+//foreach (int item in v)
+//{
+//    Console.WriteLine(item);
+//}
+//foreach (var item in Enum.GetNames(typeof(MyColor)))
+//{
+//    Console.WriteLine(item);
+//}
+
+//string col = "Greeeen";
+//Console.WriteLine(Enum.IsDefined(typeof(MyColor), col));
+
+//switch (color)
+//{
+//    case MyColor.Green:
+//        break;
+//    case MyColor.Black:
+//        break;
+//    case MyColor.Blue:
+//        break;
+//    default:
+//        break;
+//}
+
+
+
 ///// 21.12.2023  ////////
 ///
 
-Student st = new Student 
-{ 
-    FirstName = "Oleg", 
-    LastName = "Petrov", 
-    StudentCardNumber = "AB 123432", 
-    BirthDay = new DateTime(2000, 12, 5) 
-};
-Student st1 = new Student
-{
-    FirstName = "Tatyana",
-    LastName = "Osipova",
-    StudentCardNumber = "AC 123432",
-    BirthDay = new DateTime(2001, 10, 15)
-};
+//Student st = new Student 
+//{ 
+//    FirstName = "Oleg", 
+//    LastName = "Petrov", 
+//    StudentCardNumber = "AB 123432", 
+//    BirthDay = new DateTime(2000, 12, 5) 
+//};
+//Student st1 = new Student
+//{
+//    FirstName = "Tatyana",
+//    LastName = "Osipova",
+//    StudentCardNumber = "AC 123432",
+//    BirthDay = new DateTime(2001, 10, 15)
+//};
 
-Student st2 = new Student();
+//Student st2 = new Student();
+//Student st3 = st2;
 
-st.Print();
-st1.Print();
-st2.Print();
+//st.Print();
+//st1.Print();
+//st2.Print();
 
 //Point p = new Point(3, 6);
 //p.Print();
@@ -288,3 +374,9 @@ bool elemBig10(int a)
 //Console.WriteLine("Hello, World!");
 
 Console.Read();
+
+
+public enum MyColor
+{
+    Green, Black = 10, Blue = 12
+}

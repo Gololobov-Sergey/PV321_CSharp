@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PV321_CSharp
 {
-    partial struct Point
+    partial class Point
     {
         public void Print_2()
         {
